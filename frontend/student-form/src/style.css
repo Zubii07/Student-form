@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  padding: 0.4rem 0.8rem; /* Adjusted padding for smaller size */
+  font-size: 0.9rem; /* Reduced font size */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem; /* Added margin to separate buttons */
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* Student Form */
+.student-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.form-heading {
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555555;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+  width: 30%; /* Reduced width for a compact design */
+  padding: 0.6rem; /* Adjusted padding */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem auto 0; /* Center horizontally with auto margins */
+  display: block; /* Ensure it behaves as a block element for centering */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* Students List */
+.students-list {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 0.8rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.student-item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.4rem 0.8rem; /* Adjusted padding for smaller size */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Reduced font size */
+  margin: 0 0.5rem; /* Added spacing between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+  transform: scale(1.1);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+  transform: scale(1.1);
+}
+
+
+/* Edit Form */
+.edit-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  
+}
+
+.save-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin: 2rem 2rem; /* Add margin between save and cancel buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0.5rem 0; /* Add margin between buttons */
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+  transform: scale(1.1);
+}
+
+/* Empty State */
+p {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.8rem 1.2rem; /* Reduced padding */
+  border-radius: 8px;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-weight: 600;
+  color: #fff;
+  z-index: 1000;
+  text-align: center;
+  width: 80%; /* Reduced width */
+  max-width: 300px; /* Shorter max width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+}
+
+/* Animation for fade-in and fade-out effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
+/* Success notification styles (Blue) */
+.notification.success {
+  background: linear-gradient(90deg, #007bff, #4098ff); /* Blue gradient */
+  border: 2px solid #0056b3;
+}
+
+/* Error notification styles */
+.notification.error {
+  background: linear-gradient(90deg, #dc3545, #ff5b5b); /* Red gradient */
+  border: 2px solid #a71d2a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .notification {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+  .notification {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-form, .students-list {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .student-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-button,
+  .delete-button {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
